@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 3 Project</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Background Shapes -->
+
+    <div class="shape1"></div>
+    <div class="shape2"></div>
+    <div class="shape3"></div>
+    <div class="shape4"></div>
+
+    <div class="container">
+
+        <!-- Top Section -->
+
+        <div class="top">
+
+            <h1 class="title">
+                Advanced Styling and JavaScript
+            </h1>
+
+            <div class="task">
+                <p><b>Timeline:</b> 9 Days</p>
+                <h2>TASK - 3</h2>
+            </div>
+
+        </div>
+
+        <!-- Main Content -->
+
+        <div class="content">
+
+            <!-- Objective -->
+
+            <div class="section">
+
+                <h3>Objective</h3>
+
+                <ul>
+                    <li>
+                        Gain advanced skills in CSS and JavaScript for building interactive responsive websites.
+                    </li>
+                </ul>
+
+            </div>
+
+            <!-- Steps -->
+
+            <div class="section">
+
+                <h3>Steps</h3>
+
+                <ul>
+
+                    <li>
+                        <b>Apply Responsive Design Using Media Queries</b><br>
+                        Ensure websites look great on mobile, tablet, and desktop devices.
+                    </li>
+
+                    <li>
+                        <b>Build an Interactive Quiz Using JavaScript</b><br>
+                        Create interactive projects using JavaScript.
+                    </li>
+
+                    <li>
+                        <b>Fetch Data From API Using JavaScript</b><br>
+                        Display live data dynamically from public APIs.
+                    </li>
+
+                </ul>
+
+            </div>
+
+            <!-- Quiz Section -->
+
+            <div class="quiz-box">
+
+                <h2>Quick JavaScript Quiz</h2>
+
+                <div class="question">
+                    What does CSS stand for?
+                </div>
+
+                <button class="btn" onclick="checkAnswer('a')">
+                    Cascading Style Sheets
+                </button>
+
+                <button class="btn" onclick="checkAnswer('b')">
+                    Computer Style Syntax
+                </button>
+
+                <button class="btn" onclick="checkAnswer('c')">
+                    Creative Styling System
+                </button>
+
+                <div class="result" id="result"></div>
+
+            </div>
+
+            <!-- API Section -->
+
+            <div class="api-box">
+
+                <h2>Random Joke Generator 😂</h2>
+
+                <button class="btn" onclick="getJoke()">
+                    Get Random Joke
+                </button>
+
+                <p id="joke"></p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

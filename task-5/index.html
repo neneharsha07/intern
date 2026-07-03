@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Student Management System</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Student Management System</h1>
+</header>
+
+<div class="dashboard">
+    <div class="card">
+        <h2 id="totalStudents">0</h2>
+        <p>Total Students</p>
+    </div>
+
+    <div class="card">
+        <h2 id="avgMarks">0</h2>
+        <p>Average Marks</p>
+    </div>
+</div>
+
+<div class="container">
+
+    <div class="form-section">
+        <h2>Add Student</h2>
+
+        <input type="text" id="name" placeholder="Student Name">
+        <input type="number" id="roll" placeholder="Roll Number">
+        <input type="number" id="marks" placeholder="Marks">
+
+        <button onclick="addStudent()">Add Student</button>
+    </div>
+
+    <div class="search-section">
+        <input
+            type="text"
+            id="search"
+            placeholder="Search Student"
+            onkeyup="searchStudent()">
+    </div>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Roll No</th>
+                <th>Marks</th>
+                <th>Grade</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+
+        <tbody id="studentTable"></tbody>
+    </table>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
